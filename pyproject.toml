@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aspose-font"
+version = "1.0.0"
+description = "Pure-Python font library — TrueType, OpenType, CFF, Type1, WOFF, WOFF2"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Aspose", email = "support@aspose.com" }]
+keywords = ["font", "truetype", "opentype", "cff", "woff", "woff2", "type1", "typography"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Text Processing :: Fonts",
+]
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/aspose/aspose-font"
+Documentation = "https://docs.aspose.com/font/python-net/"
+Repository = "https://github.com/aspose/aspose-font"
+"Bug Tracker" = "https://github.com/aspose/aspose-font/issues"
+
+[project.scripts]
+aspose-font = "aspose_font.cli:main"
+aspose-font-reporting = "aspose_font.reporting:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.4", "build>=1.2"]
+mcp = ["mcp>=1.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"aspose_font._brotli.vendor" = ["LICENSE.brotlihaxe.txt", "data/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
+exclude = ["src/aspose_font/_brotli/vendor/brotlihaxe.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[dependency-groups]
+dev = [
+    "build>=1.2",
+    "pytest>=9.0.2",
+    "ruff>=0.4",
+]
