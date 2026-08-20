@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="620" viewBox="0 0 1160 620" role="img" aria-labelledby="title desc">
+  <title id="title">Font QA Report summary</title>
+  <desc id="desc">Roboto Font QA Report output with coverage, warnings, and next actions.</desc>
+  <rect width="1160" height="620" rx="28" fill="#f7f9fc"/>
+  <rect x="36" y="36" width="1088" height="548" rx="22" fill="#ffffff" stroke="#d7deea"/>
+  <rect x="36" y="36" width="1088" height="116" rx="22" fill="#27364d"/>
+  <text x="76" y="91" fill="#ffffff" font-family="Arial, sans-serif" font-size="34" font-weight="700">Font QA Report</text>
+  <text x="76" y="126" fill="#cdd7e7" font-family="Arial, sans-serif" font-size="20">Generated output from FontQaReporter.build(...)</text>
+  <text x="76" y="206" fill="#1f2d3d" font-family="Arial, sans-serif" font-size="42" font-weight="700">Roboto</text>
+  <text x="76" y="242" fill="#607086" font-family="Arial, sans-serif" font-size="22">Regular variable font handoff summary</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="76" y="292" width="230" height="110" rx="16" fill="#fff4f2" stroke="#efc3bd"/>
+    <text x="100" y="334" fill="#92352b" font-size="18" font-weight="700">Coverage</text>
+    <text x="100" y="374" fill="#1f2d3d" font-size="34" font-weight="700">194/257</text>
+    <text x="100" y="395" fill="#607086" font-size="16">requested codepoints</text>
+    <rect x="334" y="292" width="230" height="110" rx="16" fill="#f1f7ff" stroke="#c5d8f2"/>
+    <text x="358" y="334" fill="#245f9f" font-size="18" font-weight="700">Variable</text>
+    <text x="358" y="374" fill="#1f2d3d" font-size="34" font-weight="700">2 axes</text>
+    <text x="358" y="395" fill="#607086" font-size="16">18 named instances</text>
+    <rect x="592" y="292" width="230" height="110" rx="16" fill="#fffaf0" stroke="#ead8a8"/>
+    <text x="616" y="334" fill="#8a5f00" font-size="18" font-weight="700">Warnings</text>
+    <text x="616" y="374" fill="#1f2d3d" font-size="34" font-weight="700">2</text>
+    <text x="616" y="395" fill="#607086" font-size="16">missing: 63</text>
+    <rect x="850" y="292" width="230" height="110" rx="16" fill="#f2fbf5" stroke="#bde3c8"/>
+    <text x="874" y="334" fill="#287345" font-size="18" font-weight="700">Next actions</text>
+    <text x="874" y="374" fill="#1f2d3d" font-size="34" font-weight="700">3</text>
+    <text x="874" y="395" fill="#607086" font-size="16">ready for handoff review</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="22">
+    <circle cx="91" cy="471" r="8" fill="#d84b3f"/>
+    <text x="112" y="479" fill="#1f2d3d">Stable JSON and self-contained HTML report files</text>
+    <circle cx="91" cy="515" r="8" fill="#d84b3f"/>
+    <text x="112" y="523" fill="#1f2d3d">Identity, metrics, variable axes, coverage, warnings, and next actions</text>
+  </g>
+</svg>
