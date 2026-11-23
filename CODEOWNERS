@@ -1,0 +1,7 @@
+* @aspose-font-foss/maintainers
+
+/src/ @aspose-font-foss/maintainers
+/tests/ @aspose-font-foss/maintainers
+/.gitlab-ci.yml @aspose-font-foss/maintainers
+/.github/workflows/ @aspose-font-foss/maintainers
+/scripts/ @aspose-font-foss/maintainers
